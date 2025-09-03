@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here</title>
+</head>
+<body>
+    <h1>Register here</h1>
+    <form action="register.jsx">
+        <label for="name">Name:</label>
+        <input  id="name" type="text" placeholder="Enter your name" required>
+        <br>
+         <label for="Contact">Contact:</label>
+        <input id="Contact" type="tel" placeholder="Enter your number" required>
+        <br>
+         <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your Email" required >
+        <br>
+        <label for="DOB">DOB:</label>
+        <input type="date" required>
+        <br>
+        <label for="Gender" >Gender:</label>
+        <input   name="genders" id="Gender" type="radio" value="M" > Male 
+        <input  name="genders" id="Gender" type="radio" value="F" >Female
+        <br>
+        <label for="branch">Branch:</label>
+        <select id="branch" required>
+            <option selected>CSE</option>
+            <option>IT</option>
+            <option>AIML</option>
+            <option>DS</option>
+        </select>
+        <br>
+        <br>
+        <label for="sem">Semester:</label>
+        <select id="sem" required>
+            <option selected>I</option>
+            <option>II</option>
+            <option>III</option>
+            <option>IV</option>
+            <option>V</option>
+        </select>
+        <br>
+        <label for="marksheet">Upload Marksheet:</label>
+        <br>
+        <input type="file" placeholder="Upload" >
+        <br>
+        <br>
+        <input type="submit" placeholder="Submit">
+        <input type="reset" placeholder="Reset">
+    </form>
+</body>
+</html>
