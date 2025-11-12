@@ -1,0 +1,16 @@
+.card{
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    color:red;
+    border: 5px solid blue;
+    border-radius: 5px;
+    padding: 25px;
+    margin:auto;
+    justify-content: center;;
+}
+.booklist{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}

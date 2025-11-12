@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Example</title>
+    <script>
+        function addpara(){
+         const para=document.createElement("p");   // Create an <p> where data content is given below
+         para.textContent="This is new Paragraph";  // adding text content
+         para.style.color="Green";   // setting the color
+         //const id=document.getElementById("para1"); 
+         const id=document.querySelectorAll("div");
+        // document.body.appendChild(para);  // adding it to html
+        console.log(id);
+        id.forEach((id1)=>{
+         id1.appendChild(para);
+        })
+        }
+    </script>
+</head>
+<body>
+    <button onclick="addpara()">Add Para</button>
+    <p>This is old Paragraph</p>
+    <div id="para1"></div>
+    <div id="para2"></div>
+    <div id="para3"></div>
+    <hr>
+</body>
+</html>
