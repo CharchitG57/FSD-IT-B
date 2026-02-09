@@ -38,6 +38,19 @@
 // const result=fs.readFileSync("./it-a.txt","utf-8");
 // console.log(result);
 const fs=require('fs');
-fs.writeFile("./ad.text","code is very good time pass",()=>{
+// fs.writeFile("./ad.txt","code is very good time pass",()=>{
 
-});
+// });
+// fs.readFile("./ad.txt","utf-8",(err,res)=>{
+// if(err){
+//     console.log("Error",err)
+// }
+// else{
+//     console.log(res);
+// }
+// });
+// fs.appendFileSync("./ad.txt",`and i am happy`)
+// fs.writeFile("./a1.txt","Hello I am a Student",()=>{});
+// fs.cpSync("./a1.txt","b1.txt")
+
+// fs.unlinkSync("./ad.txt")
