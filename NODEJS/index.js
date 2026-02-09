@@ -38,4 +38,6 @@
 // const result=fs.readFileSync("./it-a.txt","utf-8");
 // console.log(result);
 const fs=require('fs');
-fs.writeFile("./ad.text","code is very good time pass");
+fs.writeFile("./ad.text","code is very good time pass",()=>{
+
+});
