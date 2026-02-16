@@ -37,7 +37,7 @@
 // fs.writeFileSync("./abes.txt","We are student of ABES")
 // const result=fs.readFileSync("./it-a.txt","utf-8");
 // console.log(result);
-const fs=require('fs');
+//const fs=require('fs');
 // fs.writeFile("./ad.txt","code is very good time pass",()=>{
 
 // });
@@ -54,3 +54,94 @@ const fs=require('fs');
 // fs.cpSync("./a1.txt","b1.txt")
 
 // fs.unlinkSync("./ad.txt")
+
+// const fs=require('fs').promises
+// // fs.writeFile('b1.txt',"Hello World",(err,res)=>{
+
+// // })
+
+// // Using Promises
+// async function ReadFile(){
+//     try{
+//        const data=await fs.readFile('a1.txt','utf-8')
+//        console.log(data);
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+// }
+// async function appendFile(){
+//     try{
+//         const data=await fs.appendFile('a1.txt','\n My branch is IT');
+//         console.log(data);
+//     }
+//     catch(err){
+//         console.log(err);
+//     }
+// }
+// async function main(){
+// ReadFile();
+// appendFile();
+// ReadFile();
+// }
+// main();
+
+// const fs=require('fs/promises');
+// async function read(file){
+//     try{
+//         const data= await fs.readFile(file,'utf-8')
+//         const jsondata=JSON.parse(data);
+//         console.log(jsondata.name);
+//     }
+//     catch(err){
+//         console.log("Unable to read file",err);
+//     }
+// }
+// read('./data.json')
+
+// const customerData = {
+//   name: "Updated Co.",
+//   order_count: 5,
+//   address: "Another Address"
+// };
+
+// async function write(filepath,data){
+//   try{
+//       const jsonString=JSON.stringify(data,null,2);
+//        await fs.writeFile(filepath,jsonString,'utf-8');
+//   }
+//   catch(err){
+//     console.log(err);
+//   }
+// }
+// write('./data.json',customerData);
+
+// Udating json
+
+// const fs=require('fs/promises')
+
+// async function updatefile(filePath){
+//     try{
+//         const data= await fs.readFile(filePath,'utf-8');
+//         const JsonOBJ=JSON.parse(data);
+//         JsonOBJ.order_cont+=1;
+//         const updated=JSON.stringify(JsonOBJ,null,2);
+      
+//       await fs.writeFile(filePath,updated,'utf-8')
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+// }
+
+// updatefile('./data.json');
+
+const os=require('os');
+console.log("platform",os.platform());
+console.log("Userinfo",os.userInfo());
+console.log("CPU",os.arch());
+console.log("free memory",os.freemem());
+console.log("total memory",os.totalmem());
+console.log("Uptime",os.uptime());
+console.log("home dir",os.homedir());
+console.log("Host name",os.hostname());
