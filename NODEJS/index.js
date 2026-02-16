@@ -136,12 +136,27 @@
 
 // updatefile('./data.json');
 
-const os=require('os');
-console.log("platform",os.platform());
-console.log("Userinfo",os.userInfo());
-console.log("CPU",os.arch());
-console.log("free memory",os.freemem());
-console.log("total memory",os.totalmem());
-console.log("Uptime",os.uptime());
-console.log("home dir",os.homedir());
-console.log("Host name",os.hostname());
+// const os=require('os');
+// console.log("platform",os.platform());
+// console.log("Userinfo",os.userInfo());
+// console.log("CPU",os.arch());
+// console.log("free memory",os.freemem());
+// console.log("total memory",os.totalmem());
+// console.log("Uptime",os.uptime());
+// console.log("home dir",os.homedir());
+// console.log("Host name",os.hostname());
+
+
+const http = require('http');
+const fs=require('fs');
+const home=fs.readFileSync('abes.html');
+const myserver = http.createServer((req, res) => {
+   res.statusCode=200;
+   //res.setHeader('content-type','text/plain');
+   res.end(home);
+  // res.end('hello world');
+});
+myserver.listen(8000, () => {
+  console.log('Server is running on port 8000');
+});
+
