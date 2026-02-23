@@ -116,7 +116,7 @@
 // }
 // write('./data.json',customerData);
 
-// Udating json
+// Updating json
 
 // const fs=require('fs/promises')
 
@@ -137,14 +137,14 @@
 // updatefile('./data.json');
 
 // const os=require('os');
-// console.log("platform",os.platform());
-// console.log("Userinfo",os.userInfo());
-// console.log("CPU",os.arch());
+//console.log("platform",os.platform());
+ //console.log("Userinfo",os.userInfo());
+ //console.log("CPU",os.arch());
 // console.log("free memory",os.freemem());
-// console.log("total memory",os.totalmem());
-// console.log("Uptime",os.uptime());
+ //console.log("total memory",os.totalmem());
+//console.log("Uptime",os.uptime());
 // console.log("home dir",os.homedir());
-// console.log("Host name",os.hostname());
+ //console.log("Host name",os.hostname());
 
 
 const http = require('http');
@@ -159,4 +159,3 @@ const myserver = http.createServer((req, res) => {
 myserver.listen(8000, () => {
   console.log('Server is running on port 8000');
 });
-
